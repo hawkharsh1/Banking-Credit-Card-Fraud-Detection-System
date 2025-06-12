@@ -112,5 +112,3 @@ This project focuses on identifying fraudulent credit card transactions using **
 
 ---
 
-## 📂 Project Structure
-
