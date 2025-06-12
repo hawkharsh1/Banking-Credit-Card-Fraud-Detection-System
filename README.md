@@ -60,13 +60,29 @@ This project focuses on identifying fraudulent credit card transactions using **
 | One-Class SVM       | 8516             | 70.09%   | Too many false positives              |
 
 ---
+## 🔍 Observations
 
-## 🧠 Observations
+- **Isolation Forest** detected `73` frauds, compared to:
+  - **Local Outlier Factor (LOF)**: `97` frauds
+  - **One-Class SVM**: `8516` frauds (many false positives)
 
-- **Isolation Forest** was the most effective in detecting fraudulent cases (~30% detection).
-- **LOF** also performed reasonably but had lower recall.
-- **SVM** produced too many false positives due to dataset imbalance.
-- Precision-Recall Curve (PR AUC) is used instead of accuracy due to class imbalance.
+- **Model Accuracy**:
+  - Isolation Forest: **99.74%**
+  - LOF: **99.65%**
+  - SVM: **70.09%**
+
+- **Fraud Detection Rate** (Precision & Recall):
+  - **Isolation Forest** performed the best with ~**27%** fraud detection.
+  - **LOF** had a lower detection rate at only ~**2%**.
+  - **SVM** was ineffective with ~**0%** precision on frauds due to high false positives.
+
+- **Conclusion**:  
+  Isolation Forest significantly outperformed the other models in accurately detecting fraudulent transactions (~30% improvement). It proved more reliable for identifying rare fraud cases in an imbalanced dataset.
+
+- **Next Steps**:
+  - Consider increasing the dataset size or applying **deep learning models** (e.g., Autoencoders or LSTMs) for better performance.
+  - Use **ensemble methods** or **hybrid anomaly detection systems** for improved accuracy.
+  - Be cautious of **computational cost** when scaling to real-time or larger systems.
 
 ---
 
