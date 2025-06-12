@@ -1,9 +1,21 @@
-# 💳 Credit Card Fraud Detection using Anomaly Detection
+# 💳 Banking Credit Card Fraud Detection-System
 
 ## 📌 Overview
 This project focuses on identifying fraudulent credit card transactions using **unsupervised anomaly detection techniques**. The dataset is highly imbalanced, making it a perfect case for anomaly detection rather than traditional supervised learning.
 
 ---
+
+## ❓ Why Build This Model
+
+Credit card fraud is a growing concern in the financial sector, with attackers using sophisticated techniques to exploit systems. Fraudulent transactions not only cause financial loss but also erode customer trust. Since fraudulent transactions are extremely rare compared to legitimate ones, the dataset is highly imbalanced — making traditional classification methods less effective.
+
+This project addresses the challenge by applying **unsupervised anomaly detection techniques**, which are well-suited for identifying rare and unusual behavior in data. By building this model, we aim to:
+
+- Protect users from unauthorized credit card charges
+- Help financial institutions detect suspicious transactions in real time
+- Provide a scalable, efficient solution using Isolation Forest and other anomaly detection algorithms
+- Explore effective modeling techniques for highly imbalanced datasets
+------
 
 ## 📊 Dataset Summary
 
